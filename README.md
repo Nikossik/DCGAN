@@ -28,10 +28,13 @@ What would a standard discriminator look like? Well, about what you expect, let'
 This time we have an input image `(64, 64, 3)`, the same as output. We downsample this 4 standard `Conv layers` again in increments of 2. In the final output layer, the image is vector-aligned, which is usually fed into a `sigmoid function`, which then outputs a D Prediction for that image (one value representing the probability in the range `[0,1] - dog = 1 or no dog = 0`),
 
 Well, now you have seen the basic idea of `Gans` and `DCGANs`. So now we can start creating some dogs using Tenserflow and Keras too :).
+
 ---
 ## Realisation of DCGAN on Keras:
 
 ### Data
+
+#### Here you can download a dataset: [kaggle](https://www.kaggle.com/kostastokis/simpsons-faces)
 We use `keras.preprocessing` and `matplotlib.pyplot` to output the data and prepare it.
 
 ```python
@@ -324,7 +327,7 @@ for epoch in range(TOTAL_EPOCHS):
         
         save_imgs(epoch + 1)
 ```
-
+---
 ### Epoch 25:
 ![2](/photo/25.png)
 ### Epoch 50
