@@ -1,6 +1,7 @@
 # DCGAN
 Making DCGAN on Keras
 
+---
 `DCGANs` use some of the basic principles of CNNs and thus have become one of the most widely used architectures in practice due to their fast convergence, and also due to the fact that they can be very easily adapted to more complex options (using labels as conditions, using residual blocks etc.). Some of the most important problems that `DCGANs` solve are:
 
 - `D` is designed so that it mainly solves the problem of image classification under observation
